@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'msgecrits',
+    loadChildren: () => import('./msgecrits/msgecrits.module').then( m => m.MsgecritsPageModule)
+  },
 ];
 
 @NgModule({
